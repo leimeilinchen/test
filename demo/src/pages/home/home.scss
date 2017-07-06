@@ -1,0 +1,39 @@
+page-home {
+.time{
+    line-height: 0.1;
+    font-weight: 400;
+}
+.hour{
+   font-size: 0.1rem;
+}
+
+.title {
+    line-height: 0.3;
+    font-size: 1.8rem;
+    line-height:0.5;
+}
+.head p{
+    font-size: 0.1rem;
+    font-weight: 200;
+}
+.toolbar-ios {
+    padding: 4px;
+    min-height: 60px;
+}
+
+  ion-slides {
+    display: block;
+    width: 200px;
+    height: 100px;
+}
+.date-thing {
+        display: flex;
+        overflow-x: auto;
+    }  
+
+.button--color {
+    color: #999;
+ }
+
+ 
+}

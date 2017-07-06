@@ -1,0 +1,174 @@
+<ion-header>
+  <ion-navbar>
+      <ion-buttons start>
+      <button ion-button icon-only color="dark">
+      <img src="assets/img/time.png">
+        <div class="date">
+           <h5 class="time">AM.</h5>
+          <p class="hour">18:30</p>
+        </div>
+      </button>
+    </ion-buttons>
+
+       <div  class="head-thing">
+            <ion-segment [(ngModel)]="pet">
+                <ion-segment-button  value="hot">
+                  <div>
+                  <h1 class="title" >热门</h1>
+                  <p >HOT</p>
+                  </div>
+                </ion-segment-button>
+                <ion-segment-button  value="nearby">
+                  <div>
+                  <h1 class="title" >附近</h1>
+                  <p >NEARBY</p>
+                  </div>
+                </ion-segment-button>
+            </ion-segment>
+       </div>
+
+    <ion-buttons end>
+    <button ion-button icon-only color="dark">
+      <ion-icon name='search'></ion-icon>
+    </button>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="page-find">
+ <div [ngSwitch]="pet">
+    <ion-list *ngSwitchCase="'hot'">
+<ion-grid  style="background-color:#f4f4f4;" >
+  <ion-row  class="col-thing">
+    <ion-col class="col" col-4>
+    <img src="assets/img/faxian1.jpg"/>
+    <div class="col-title">电台节目</div>
+    <div class="col-subtitle">Radio programs</div>
+    </ion-col>
+
+    <ion-col class="col" col-4 >
+    <img src="assets/img/faxian2.jpg"/>
+    <div class="col-title">优质文章</div>
+    <div class="col-subtitle">highhest Article</div>
+    </ion-col>
+
+    <ion-col class="col" col-4>
+    <img src="assets/img/faxian4.jpg"/>
+    <div class="col-title">推荐音乐</div>
+    <div class="col-subtitle">Recommending Music</div>
+    </ion-col>
+
+  </ion-row>
+</ion-grid>
+
+<ion-card>
+  
+  <ion-row>
+  <ion-item>
+    <table>
+      <tr>
+        <td>
+          <ion-avatar item-start>
+            <img src="assets/img/fairy tale2.jpg">
+          </ion-avatar>
+        </td>
+        <td style="width:300px">
+          <h2>绿林在风中飘</h2>
+          <p>14 hour ago</p>
+        </td>
+        <td>
+          <button ion-button color="secondary" round>关注</button>
+        </td>
+      </tr>
+    </table>
+  </ion-item>
+  </ion-row>
+
+  <ion-card-content>
+    <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
+  </ion-card-content>
+
+  <img src="assets/img/faxian3.jpg">
+  <ion-row>
+    <ion-col align-self-center text-center>
+      <button ion-button class="button--color" clear small icon-start>
+      <ion-icon name='open'></ion-icon>
+        42
+      </button>
+    </ion-col>
+    <ion-col>
+      <button ion-button class="button--color" clear small icon-start>
+        <ion-icon name='text'></ion-icon>
+        4 
+      </button>
+    </ion-col>
+    <ion-col>
+      <button ion-button class="button--color" clear small icon-start>
+        <ion-icon name='thumbs-up'></ion-icon>
+        12 
+      </button>
+    </ion-col>
+  </ion-row>
+
+</ion-card>
+
+ </ion-list>
+
+    <ion-list *ngSwitchCase="'nearby'">
+<ion-card>
+  
+  <ion-row>
+  <ion-item>
+    <table>
+      <tr>
+        <td>
+          <ion-avatar item-start>
+            <img src="assets/img/fairy tale.jpg">
+          </ion-avatar>
+        </td>
+        <td style="width:300px">
+          <h2>短痛少女</h2>
+          <p>14 hour ago</p>
+        </td>
+        <td>
+          <button ion-button color="secondary" round>关注</button>
+        </td>
+      </tr>
+    </table>
+  </ion-item>
+  </ion-row>
+
+  <ion-card-content>
+    <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
+  </ion-card-content>
+
+  <img src="assets/img/faxian4.jpg">
+  <ion-row>
+    <ion-col align-self-center text-center>
+      <button ion-button class="button--color" clear small icon-start>
+      <ion-icon name='open'></ion-icon>
+        33
+      </button>
+    </ion-col>
+    <ion-col>
+      <button ion-button class="button--color" clear small icon-start>
+        <ion-icon name='text'></ion-icon>
+        42
+      </button>
+    </ion-col>
+    <ion-col>
+      <button ion-button class="button--color" clear small icon-start>
+        <ion-icon name='thumbs-up'></ion-icon>
+        122
+      </button>
+    </ion-col>
+  </ion-row>
+
+</ion-card>
+
+
+    </ion-list>
+  </div>
+</ion-content>

@@ -1,0 +1,89 @@
+page-find {
+.time{
+    line-height: 0.1;
+    font-weight: 400;
+}
+.hour{
+   font-size: 0.1rem;
+}
+
+.head-thing {
+        display: flex;
+        overflow-x: auto;
+    }
+
+.title {
+    line-height: 0.1;
+    font-size: 1.7rem;
+    line-height:0.1;
+}
+
+.head-thing p{
+    font-size: 0.1rem;
+    font-weight: 200;
+}
+.segment-ios .segment-button:first-of-type {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 20;
+    border-bottom-right-radius: 200;
+    border-bottom-left-radius: 4px;
+    margin-right: 0;
+}
+.segment-ios .segment-button.segment-activated {
+    color: #222;
+    background-color: rgba(0,0,0,0);
+    opacity: 1;
+    transition: 100ms all linear;
+}
+.segment-ios .segment-button {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 0;
+    height: 5rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(158, 158, 158, 0);
+    font-size: 1.3rem;
+    line-height: 1rem;
+    color:#222;
+    background-color: transparent;
+}
+
+.toolbar-ios {
+    padding: 4px;
+    min-height: 60px;
+}
+
+ .col {
+    padding: 1px;
+    position: relative;
+    margin: 0;
+    min-height: 1px;
+}
+.col-title {
+    position: absolute;
+    top: 20%;
+    font-size: 1.3em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+    text-align:center;
+
+  }
+
+.col-subtitle {
+    font-size:0.6em;
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    color: #fff;
+    text-align:center;
+
+  }
+
+.button--color {
+    color: #999;
+ }
+
+ }
